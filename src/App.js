@@ -13,14 +13,18 @@
       results: [],
       selected: {}
     });
-    //const apiurl = "http://www.omdbapi.com/?apikey=5a4eb58";
-    const apiurl = "http://www.omdbapi.com/?i=tt3896198&apikey=f6710837";
+    //const apiurl = "http://www.omdbapi.com/";
 
+
+    const apiurl = "http://www.omdbapi.com/?apikey=f6710837";
+    //const apikey = "apikey=f6710837"
+    //const apiurl = "http://www.omdbapi.com/?apikey=f6710837";
     const search = (e) => {
       if (e.key === "Enter") {
         axios(apiurl + "&s=" + state.s).then(({ data }) => {
             let results = data.Search;
 
+            console.log(data);
             setState(prevState => {
             return { ...prevState, results: results }
           })
@@ -40,7 +44,9 @@
       axios(apiurl + "&i=" + id).then(({ data }) => {
         let result = data;
 
-
+        console.log(result);
+        console.log("this is id: " + id)
+        console.log("this is the link: " + apiurl + "&i=" +id);
         setState(prevState => {
           return { ...prevState, selected: result }
         });
@@ -56,7 +62,7 @@
     return (
       <div className="App">
         <header>
-          <h1>Movie Daaaatabase</h1>
+          <h1>Not IMDB</h1>
         </header>
         <main>
           <Search handleInput={handleInput} search={search} />

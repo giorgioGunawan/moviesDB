@@ -2,7 +2,7 @@
   "name": "movie_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://giorgiogunawan.github.io/movie_app",
+  "homepage": "https://giorgiogunawan.github.io/movie_app/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
