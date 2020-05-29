@@ -2,7 +2,8 @@ import React from 'react'
 
 import Result from './Result.js'
 
-function Results ({ results, openPopup }) {
+function Results ({ results = [], openPopup }){
+
 	return (
 		<section className="results">
 			{results.map(result => (
