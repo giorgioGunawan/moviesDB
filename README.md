@@ -2,6 +2,8 @@ Issues Track:
 
 20/06/20: Cannot publish on github pages or other hosting website due to API image request having different format. Issue revolves around jeopardising security for image transfer and workaround can be publishing into non-secure hosting site, which I have not gone around to do. 
 
+22/08/20: Try fix w aws.
+
 
 
 
